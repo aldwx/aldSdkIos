@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AldAnalytics
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AldAnalytics.initSDK(withAppKey: "", launchOptions: launchOptions)
+        AldAnalytics.trackAppInstall()
+        AldAnalytics.trackEvent("Name", properties: nil)
+        
         return true
     }
 

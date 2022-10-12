@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1400"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB30BD5322840CA40004061D"
-               BuildableName = "SensorsAnalyticsSDK.framework"
-               BlueprintName = "SensorsAnalyticsSDK"
-               ReferencedContainer = "container:SensorsAnalyticsSDK.xcodeproj">
+               BlueprintIdentifier = "4C3C3C2B28F66F1100342431"
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,15 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB30BD5322840CA40004061D"
-            BuildableName = "SensorsAnalyticsSDK.framework"
-            BlueprintName = "SensorsAnalyticsSDK"
-            ReferencedContainer = "container:SensorsAnalyticsSDK.xcodeproj">
+            BlueprintIdentifier = "4C3C3C2B28F66F1100342431"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -56,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CB30BD5322840CA40004061D"
-            BuildableName = "SensorsAnalyticsSDK.framework"
-            BlueprintName = "SensorsAnalyticsSDK"
-            ReferencedContainer = "container:SensorsAnalyticsSDK.xcodeproj">
+            BlueprintIdentifier = "4C3C3C2B28F66F1100342431"
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

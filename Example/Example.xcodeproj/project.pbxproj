@@ -13,7 +13,23 @@
 		4C3C3C3728F66F1100342431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C3C3528F66F1100342431 /* Main.storyboard */; };
 		4C3C3C3928F66F1200342431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C3C3828F66F1200342431 /* Assets.xcassets */; };
 		4C3C3C3C28F66F1200342431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3C3C3A28F66F1200342431 /* LaunchScreen.storyboard */; };
+		4C3C43AC28F6B15600342431 /* AldAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3C43AB28F6B15600342431 /* AldAnalytics.framework */; };
+		4C3C43AD28F6B15600342431 /* AldAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3C43AB28F6B15600342431 /* AldAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C3C43AE28F6B15600342431 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C3C43AD28F6B15600342431 /* AldAnalytics.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C3C3C2C28F66F1100342431 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		4C3C3C3828F66F1200342431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3C3C3B28F66F1200342431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C3C3C3D28F66F1200342431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3C43AB28F6B15600342431 /* AldAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AldAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3C43AC28F6B15600342431 /* AldAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				4C3C3C2E28F66F1100342431 /* Example */,
 				4C3C3C2D28F66F1100342431 /* Products */,
+				4C3C43AA28F6B15600342431 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		4C3C43AA28F6B15600342431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C3C43AB28F6B15600342431 /* AldAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				4C3C3C2828F66F1100342431 /* Sources */,
 				4C3C3C2928F66F1100342431 /* Frameworks */,
 				4C3C3C2A28F66F1100342431 /* Resources */,
+				4C3C43AE28F6B15600342431 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
