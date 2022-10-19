@@ -1,0 +1,6 @@
+framework module AldAnalytics {
+  umbrella header "AldAnalytics.h"
+
+  export *
+  module * { export * }
+}
