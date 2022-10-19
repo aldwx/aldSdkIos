@@ -10,10 +10,17 @@
 - README.md  
 - sa-sdk-ios： 神策 iOS SDK 源码项目工程  
 
+# 运行 Example
+
+进入 Example 文件夹  
+用命令行打开当前文件夹目录，并执行 `pod install` 命令
+双击 Example.xcworkspace 或者在命令行中执行 `open Example.xcworkspace` 命令，即可使用 Xcode 打开 Demo 项目。  
+点击 Xcode 的运行按钮或者按 Command+R 运行项目。
+
 # 打包脚本
 
 直接在当前目录执行打包脚本，在命令行中输入入下的命令  
-sudo ./build_framework.sh  
+`sudo ./build_framework.sh`  
 即可编译生成 AldAnalytics.xcframework
 
 # 发版说明
@@ -41,7 +48,7 @@ GitHub 上的代码必须需要包括：AldAnalytics.xcframework、AldAnalytics.
 ## 发布
 
 进入 GitHub 代码的目录，执行下面的命令：    
-pod trunk push AldAnalytics.podspec --allow-warnings    
+`pod trunk push AldAnalytics.podspec --allow-warnings`    
 这个命令需要国际网络支持，而且比较慢。请耐心等待。  
 
 ## 参考
