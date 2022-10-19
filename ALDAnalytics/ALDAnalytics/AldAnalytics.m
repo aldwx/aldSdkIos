@@ -25,6 +25,8 @@
     options.enableTrackAppCrash = YES;
     options.enableTrackPageLeave = YES;
     [SensorsAnalyticsSDK startWithConfigOptions:options];
+    
+    [self dloadChannel];
 }
 
 + (void)trackAppInstall {
@@ -33,6 +35,17 @@
 
 + (void)trackAppInstallWithProperties:(NSDictionary *)properties {
     [SensorsAnalyticsSDK.sharedInstance trackAppInstallWithProperties:properties disableCallback:NO];
+}
+
++ (void)dloadChannel {
+    [self dloadChannel:@""];
+}
+
++ (void)dloadChannel:(NSString *)channel {
+    if (!channel) {
+        return;
+    }
+    [SensorsAnalyticsSDK.sharedInstance registerSuperProperties:@{@"ald_channel": channel}];
 }
 
 + (void)trackEvent:(NSString *)event properties:(NSDictionary *)properties {
@@ -66,3 +79,4 @@
 }
 
 @end
+

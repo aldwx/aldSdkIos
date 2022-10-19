@@ -1,0 +1,16 @@
+PODS:
+  - AldAnalytics (0.0.1)
+
+DEPENDENCIES:
+  - AldAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  AldAnalytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AldAnalytics: 7bd42b19265e1c4eb3831d7fbbecdb49ee404d32
+
+PODFILE CHECKSUM: e3c784f0c765ec8eb5a7ec2339a106bf8458bc49
+
+COCOAPODS: 1.11.3

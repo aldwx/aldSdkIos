@@ -15,9 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        AldAnalytics.initSDK(withAppKey: "", launchOptions: launchOptions)
+        AldAnalytics.initSDK(withAppKey: "bf9dbf67fc393e123492e38d7e83086c", launchOptions: launchOptions)
         AldAnalytics.trackAppInstall()
-        AldAnalytics.trackEvent("Name", properties: nil)
+        AldAnalytics.trackEvent("Name", properties: ["name": "刘", "age": 18])
+        AldAnalytics.trackPredefined("Ald_Name", properties: ["ald_cc": "cc"])
         
         return true
     }
