@@ -10,6 +10,8 @@ import AldAnalytics
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -45,5 +47,24 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func search(_ sender: UIButton) {
+        AldAnalytics.trackPredefined("AldSearchResultClick", properties: [
+            "ald_content_id": "<#内容 ID#>",
+            "ald_content_name": "<#内容名称#>",
+            "ald_key_word": "<#关键词#>",
+            "ald_key_word_type": "<#关键词类型#>",
+            "ald_position_number": "<#位置序号#>",
+        ])
+        
+        // 模拟搜索结果返回回调
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            AldAnalytics.trackPredefined("AldSearchRequest", properties: [
+                "ald_key_word": "<#关键词#>",
+                "ald_search_type": "<#搜索类型#>",
+                // 是否登录成功（TRUE、FALSE）
+                "ald_result_num": "<#搜索结果数量#>",
+            ])
+        }
+    }
 }
 
