@@ -17,7 +17,7 @@ FOUNDATION_EXPORT const unsigned char AldAnalyticsVersionString[];
 
 @interface AldAnalytics : NSObject
 
-+ (void)initSDKWithAppKey:(NSString *)appKey launchOptions:(id)launchOptions;
++ (void)initSDKWithAppKey:(NSString *)appKey debug:(BOOL )debug  launchOptions:(id)launchOptions;
 
 + (void)initSASDKWithServerURL:(NSString *)serverURL launchOptions:(id)launchOptions;
 
@@ -26,5 +26,5 @@ FOUNDATION_EXPORT const unsigned char AldAnalyticsVersionString[];
 
 + (void)trackEvent:(NSString *)event properties:(NSDictionary *)properties;
 + (void)trackPredefined:(NSString *)event properties:(NSDictionary *)properties;
-
++ (void)dloadChannel:(NSString *)channel;
 @end
