@@ -15,11 +15,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        AldAnalytics.initSDK(withAppKey: "bf9dbf67fc393e123492e38d7e83086c", launchOptions: launchOptions)
+        AldAnalytics.initSDK(withAppKey: "9d27d269c09183b8fb192442b9e9b2a8",
+                             debug:false,
+                             launchOptions: launchOptions)
         AldAnalytics.trackAppInstall()
-        AldAnalytics.trackEvent("Name", properties: ["name": "刘", "age": 18])
-        AldAnalytics.trackPredefined("Ald_Name", properties: ["ald_cc": "cc"])
+//        //自定义事件
+//        AldAnalytics.trackEvent("Name", properties: ["name": "刘", "age": 18])
+//        //预定义事件
+//        AldAnalytics.trackPredefined("Ald_Name", properties: ["ald_cc": "cc"])
+      
+        AldAnalytics.dloadChannel("模拟器");
+        AldAnalytics.trackPredefined("AldTestb", properties: [
+           // 内容 ID
+            "ald_scan_coreb": "1001",
+            //位置序号
+            "ald_scan_resultb": "12342",
+            "ald_scan_typb": "123"
+        ])
         
+        
+//
+//        //自定义事件
+//        AldAnalytics.trackEvent("wxandiosandandriod", properties: ["pro01_wxiosandriod": "11", "pro02_wxiosandriod": "22"])
         return true
     }
 
