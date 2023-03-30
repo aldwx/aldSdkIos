@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   # 仓库名称
   s.name         = "AldAnalytics"
   # SDK 版本
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   # SDK 描述，会显示在 CocoaPods 官网上
   s.summary      = "The official iOS SDK"
   # 官网地址
