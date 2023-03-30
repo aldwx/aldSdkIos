@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   # 官网地址
   s.homepage     = "https://www.aldzs.com/"
   # 源码地址
-  s.source       = { :git => 'https://github.com/sensorsdata/sa-sdk-ios.git', :tag => "v#{https://github.com/aldwx/aldSdkIos.git.1.0.0}" }
+  s.source       = { :git => 'https://github.com/sensorsdata/sa-sdk-ios.git', :tag => "v#{s.version}" }
   # 开源协议，可以不填
   s.license = { :type => "Apache License, Version 2.0" }
   # 开发者信息

@@ -27,4 +27,8 @@ FOUNDATION_EXPORT const unsigned char AldAnalyticsVersionString[];
 + (void)trackEvent:(NSString *)event properties:(NSDictionary *)properties;
 + (void)trackPredefined:(NSString *)event properties:(NSDictionary *)properties;
 + (void)dloadChannel:(NSString *)channel;
++ (NSString*)getDistinctID;
++(void)setLoginId:(NSString*) ald_login_id;
+
+
 @end
